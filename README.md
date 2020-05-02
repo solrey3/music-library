@@ -16,7 +16,7 @@ Since I use iTunes on my Macs, I try to make sure my Musicbee library management
 $If($And(<Album Artist>="Various Artists",<iTunes Compilation>>0),Compilations,$RxReplace(<Album Artist>,"^\.|\.$","_"))\$IsNull(<Album>,"Unknown Album",$RxReplace(<Album>,"^\.|\.$","_"))\$If(<Disc Count>>1,<Disc-Track#>" ",$If($And(<Disc Count>=0,<Disc#>>0),<Disc-Track#>" ",$If(<Track#>=0,,<Track#>" ")))<Title>
 ```
 
-I also run into issues with non-ASCII double-byte characters in playlists trying to get my library files to match, so I created a small python script to help replace those problematic filenames in my M3U8 playlists.
+I also run into issues with non-ASCII double-byte characters in playlists trying to get my library files to match, so I created a small python script to help replace those problematic filenames in my M3U8 playlists. On Windows, there are issues with the ☮ symbol in Prince's _Sign "☮" the Times_. For now, just take it out of the list.
 
 I use [iTunesExport](https://www.ericdaugherty.com/dev/itunesexport/) to bring over my iTunes playlists into [MusicBee](https://getmusicbee.com/) and run the earlier mentioned Python script on those playlists.
 
