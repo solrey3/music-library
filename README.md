@@ -22,5 +22,5 @@ I use [iTunesExport](https://www.ericdaugherty.com/dev/itunesexport/) to bring o
 
 ## Adding New Music To Collection
 
-[MusicBrainz Picard](https://picard.musicbrainz.org/) is an excellent tool to help manage tags to my new music. I am a stciker in regards to original release dates of songs, so I am hoping to utilize the APIs from [Wikidata](https://www.wikidata.org/w/api.php?action=help), [Genius](https://docs.genius.com/), and [MusicBrainz](https://musicbrainz.org/doc/Development/XML_Web_Service/Version_2) to help pull proper release dates for my collection.
+[MusicBrainz Picard](https://picard.musicbrainz.org/) is an excellent tool to help manage tags to my new music. I am a stickler in regards to original release dates of songs, so I am hoping to utilize the APIs from [Wikidata](https://www.wikidata.org/w/api.php?action=help), [Genius](https://docs.genius.com/), and [MusicBrainz](https://musicbrainz.org/doc/Development/XML_Web_Service/Version_2) to help pull proper release dates for my collection.
 
