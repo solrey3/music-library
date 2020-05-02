@@ -1,0 +1,1 @@
+$If($And(<Album Artist>="Various Artists",<iTunes Compilation>>0),Compilations,$RxReplace(<Album Artist>,"^\.|\.$","_"))\$IsNull(<Album>,"Unknown Album",$RxReplace(<Album>,"^\.|\.$","_"))\$If(<Disc Count>>1,<Disc-Track#>" ",$If($And(<Disc Count>=0,<Disc#>>0),<Disc-Track#>" ",$If(<Track#>=0,,<Track#>" ")))<Title>
