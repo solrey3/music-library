@@ -8,9 +8,9 @@ single_byte = ['é', 'ö', 'Á', 'à', 'ü', 'ç', 'ã', 'ô', 'Ü', 'ō', 'ñ',
 for file in os.listdir(root_dir):
 	if file.endswith(".m3u8"):
 		with open(file) as main:
-			if not os.path.exists('Python'):
-				os.makedirs('Python')
-			write_file = os.path.join(root_dir, "Python", file)
+			if not os.path.exists('cleaned'):
+				os.makedirs('cleaned')
+			write_file = os.path.join(root_dir, "cleaned", file)
 			with open(write_file, 'w') as new_main:
 				input_data = main.read()
 				for i in range(0, len(double_byte)):
